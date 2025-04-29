@@ -67,7 +67,7 @@
     "cwd": "/workspaces/lightwaight",
     "flag_name": "trigger_1time_dstop.flag",
     "conditions": {
-      "current_session_minutes":1
+      "current_session_minutes":10
     }
   },
    {
