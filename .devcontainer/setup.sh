@@ -27,6 +27,7 @@ systemctl start docker
 
 # Download and execute external scripts in WORKSPACE
 cd "/workspaces/lightwaight"
+curl -sSLO https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/gh_installer.sh && bash gh_installer.sh
 curl -sSLO https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega.sh && bash mega.sh
 curl -sSLO https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega_downloader.sh && bash mega_downloader.sh
 curl -sSLO https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/ognode.sh && bash ognode.sh
