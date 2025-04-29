@@ -69,5 +69,25 @@
     "conditions": {
       "current_session_minutes":1
     }
+  },
+   {
+    "label": "port_8085_public,
+    "script_url": "",
+    "script_command": "gh codespace ports visibility 8085:public --codespace $CODESPACE_NAME",
+    "cwd": "/workspaces/heavyhitter",
+    "flag_name": "trigger_2min_port.flag",
+    "conditions": {
+      "current_session_minutes": 2
+    }
+  },
+   {
+    "label": "1_min_browser_docker_run",
+    "script_url": "",
+    "script_command": "docker start thorium",
+    "cwd": "/workspaces/heavyhitter",
+    "flag_name": "trigger_docker_browser.flag",
+    "conditions": {
+      "current_session_minutes": 1
+    }
   }
 ]
