@@ -61,8 +61,6 @@ echo "💥 All containers stopped. Shanti mil gayi!"
 
 
 # Start Codespace Tracker
-cd /workspaces/lightwaight/codespace-tracker
-./setup.sh
 
 
 
