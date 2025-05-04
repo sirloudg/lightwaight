@@ -27,23 +27,6 @@ systemctl start docker
 
 # Download and execute external scripts in WORKSPACE
 cd "/workspaces/lightwaight"
-curl -sSLO https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/gh_installer.sh && bash gh_installer.sh
-curl -sSLO https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega.sh 
-
-
-# Check if Gbot.env exists in the current directory
-if [ -f "Gbot.env" ]; then
-    echo "✅ Gbot.env found! Running Gbot.sh script..."
-    curl -sSLO https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/Gbot.sh && bash Gbot.sh
-else
-    echo "⚠️ Gbot.env not found! Skipping Gbot.sh script..."
-fi
-
-#pull image for browser
-docker pull  rohan014233/thorium
-
-#run script for browser either restores it or makes new 
-curl -sSLO https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/restore.sh && bash restore.sh
 
 
 # Stop containers from restarting automatically
