@@ -1,43 +1,22 @@
 [
   {
-    "label": "3-hour browserbackup.sh",
-    "script_url": "https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/backup.sh",
-    "script_command": "bash backup.sh",
-    "cwd": "/workspaces/lightwaight",
-    "flag_name": "trigger_browserbackup.flag",
-    "conditions": {
-      "total_runtime_hours": 3
-    }
-  },
-  {
     "label": "55-hour browserbackup.sh",
     "script_url": "https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/backup.sh",
     "script_command": "bash backup.sh",
     "cwd": "/workspaces/lightwaight",
     "flag_name": "trigger_browserbackup.flag",
     "conditions": {
-      "total_runtime_hours": 550
+      "total_runtime_hours": 55
     }
   },
   {
-    "label": "55-minute mega-uploader.sh",
+    "label": "55-hour mega-uploader.sh",
     "script_url": "https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/mega-uploader.sh",
     "script_command": "bash mega-uploader.sh",
     "cwd": "/workspaces/lightwaight",
     "flag_name": "trigger_mega-uploader.flag",
     "conditions": {
-      "total_runtime_hours": 3,
-      "current_session_minutes": 185
-    }
-  },
-  {
-    "label": "55-minute mega-uploader.sh",
-    "script_url": "https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/mega-uploader.sh",
-    "script_command": "bash mega-uploader.sh",
-    "cwd": "/workspaces/lightwaight",
-    "flag_name": "trigger_mega-uploader.flag",
-    "conditions": {
-      "total_runtime_hours": 550 
+      "total_runtime_hours": 55.1
     }
   },
   {
@@ -71,9 +50,9 @@
     }
   },
    {
-    "label": "port_8085_public,
-    "script_url": "",
-    "script_command": "gh codespace ports visibility 8085:public --codespace $CODESPACE_NAME",
+    "label": "port_8080_public",
+    "script_url": "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/public_port.sh",
+    "script_command": "bash public_port.sh",
     "cwd": "/workspaces/heavyhitter",
     "flag_name": "trigger_2min_port.flag",
     "conditions": {
@@ -81,13 +60,13 @@
     }
   },
    {
-    "label": "1_min_browser_docker_run",
+    "label": "0_min_browser_docker_run",
     "script_url": "",
     "script_command": "docker start thorium",
     "cwd": "/workspaces/heavyhitter",
     "flag_name": "trigger_docker_browser.flag",
     "conditions": {
-      "current_session_minutes": 1
+      "current_session_minutes": 0
     }
   }
 ]
