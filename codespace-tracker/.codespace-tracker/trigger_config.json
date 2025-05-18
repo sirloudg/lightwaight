@@ -40,7 +40,7 @@
     }
   },
   {
-    "label": "60Min autostopd.sh",
+    "label": "10Min autostopd.sh",
     "script_url": "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/autostopd.sh",
     "script_command": "bash autostopd.sh",
     "cwd": "/workspaces/lightwaight",
@@ -49,17 +49,7 @@
       "current_session_minutes":10
     }
   },
-   {
-    "label": "port_8080_public",
-    "script_url": "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/public_port.sh",
-    "script_command": "bash public_port.sh",
-    "cwd": "/workspaces/heavyhitter",
-    "flag_name": "trigger_2min_port.flag",
-    "conditions": {
-      "current_session_minutes": 2
-    }
-  },
-   {
+  {
     "label": "0_min_browser_docker_run",
     "script_url": "",
     "script_command": "docker start thorium",
