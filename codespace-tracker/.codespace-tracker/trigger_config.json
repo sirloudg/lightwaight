@@ -53,7 +53,7 @@
     "label": "0_min_browser_docker_run",
     "script_url": "",
     "script_command": "docker start thorium",
-    "cwd": "/workspaces/heavyhitter",
+    "cwd": "/workspaces/lightwaight",
     "flag_name": "trigger_docker_browser.flag",
     "conditions": {
       "current_session_minutes": 0
