@@ -34,7 +34,6 @@ scripts=(
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega_downloader.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/ognode.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/pipe.sh"
-  "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/titan_cloud.sh"
 )
 
 echo "📥 Downloading all scripts..."
@@ -102,9 +101,6 @@ for pair in "${tasks[@]}"; do
   run_if_env_exists "$envfile" "$script"
 done
 
-#titan nodes recover
-
-bash titan_cloud.sh
 
 # Check if Gbot.env exists in the current directory
 if [ -f "Gbot.env" ]; then
