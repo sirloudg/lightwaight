@@ -88,6 +88,8 @@ run_if_env_exists() {
   fi
 }
 
+bash mega_downloader.sh
+
 # List of env-script pairs
 declare -a tasks=(
   "mega.env mega.sh"
