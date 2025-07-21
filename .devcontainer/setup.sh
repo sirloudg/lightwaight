@@ -34,6 +34,7 @@ scripts=(
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega_downloader.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/ognode.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/pipe.sh"
+  "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/cys.sh"
 )
 
 echo "📥 Downloading all scripts..."
@@ -95,6 +96,7 @@ declare -a tasks=(
   "mega.env mega_downloader.sh"
   "og.env ognode.sh"
   "pop.env pipe.sh"
+  "cys.env cys.sh"
 )
 
 # Loop through each task (now IFS includes space, so split works)
